@@ -1,0 +1,14 @@
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\bin\Debug\net8.0\HolaConsultores.TiendaOnline.Resources.exe
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\bin\Debug\net8.0\HolaConsultores.TiendaOnline.Resources.deps.json
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\bin\Debug\net8.0\HolaConsultores.TiendaOnline.Resources.runtimeconfig.json
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\bin\Debug\net8.0\HolaConsultores.TiendaOnline.Resources.dll
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\bin\Debug\net8.0\HolaConsultores.TiendaOnline.Resources.pdb
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Resources.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Resources.AssemblyInfoInputs.cache
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Resources.AssemblyInfo.cs
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Resources.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Resources.dll
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\obj\Debug\net8.0\refint\HolaConsultores.TiendaOnline.Resources.dll
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Resources.pdb
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Resources.genruntimeconfig.cache
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Resources\obj\Debug\net8.0\ref\HolaConsultores.TiendaOnline.Resources.dll

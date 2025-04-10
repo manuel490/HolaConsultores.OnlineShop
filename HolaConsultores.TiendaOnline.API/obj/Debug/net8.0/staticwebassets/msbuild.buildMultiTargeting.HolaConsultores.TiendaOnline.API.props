@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HolaConsultores.TiendaOnline.API.props" />
+</Project>

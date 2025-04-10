@@ -1,0 +1,6 @@
+@HolaConsultores.TiendaOnline.API_HostAddress = http://localhost:5150
+
+GET {{HolaConsultores.TiendaOnline.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
