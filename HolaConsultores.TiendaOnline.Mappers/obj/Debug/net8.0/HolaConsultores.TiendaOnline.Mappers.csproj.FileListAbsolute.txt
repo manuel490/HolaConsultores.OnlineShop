@@ -109,3 +109,4 @@ C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Mappers\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Mappers\bin\Debug\net8.0\Microsoft.Web.Infrastructure.dll
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Mappers\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Mappers\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Mappers.sourcelink.json

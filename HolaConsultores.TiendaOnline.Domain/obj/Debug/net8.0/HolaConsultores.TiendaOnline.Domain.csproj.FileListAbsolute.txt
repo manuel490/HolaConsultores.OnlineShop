@@ -51,3 +51,4 @@ C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Domain\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Domain\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Domain.csproj.AssemblyReference.cache
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Domain\obj\Debug\net8.0\HolaCons.BD65D68E.Up2Date
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Domain\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Domain.sourcelink.json

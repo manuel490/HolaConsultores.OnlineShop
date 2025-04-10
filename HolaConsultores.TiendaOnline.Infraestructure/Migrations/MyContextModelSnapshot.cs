@@ -21,7 +21,7 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("HolaConsultores.TiendaOnline.Models.Negocio.ColorModel", b =>
+            modelBuilder.Entity("HolaConsultores.TiendaOnline.Infraestructure.Entities.ColorModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,6 +30,7 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -37,7 +38,7 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Migrations
                     b.ToTable("Colors");
                 });
 
-            modelBuilder.Entity("HolaConsultores.TiendaOnline.Models.Negocio.ProductColorModel", b =>
+            modelBuilder.Entity("HolaConsultores.TiendaOnline.Infraestructure.Entities.ProductColorModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -60,7 +61,7 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Migrations
                     b.ToTable("ProductColors");
                 });
 
-            modelBuilder.Entity("HolaConsultores.TiendaOnline.Models.Negocio.ProductModel", b =>
+            modelBuilder.Entity("HolaConsultores.TiendaOnline.Infraestructure.Entities.ProductModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -71,7 +72,7 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal?>("Price")
+                    b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
@@ -79,7 +80,7 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("HolaConsultores.TiendaOnline.Models.Negocio.ProductSizeModel", b =>
+            modelBuilder.Entity("HolaConsultores.TiendaOnline.Infraestructure.Entities.ProductSizeModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -102,7 +103,7 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Migrations
                     b.ToTable("ProductSizes");
                 });
 
-            modelBuilder.Entity("HolaConsultores.TiendaOnline.Models.Negocio.SizeModel", b =>
+            modelBuilder.Entity("HolaConsultores.TiendaOnline.Infraestructure.Entities.SizeModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -111,6 +112,7 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -118,15 +120,36 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Migrations
                     b.ToTable("Sizes");
                 });
 
-            modelBuilder.Entity("HolaConsultores.TiendaOnline.Models.Negocio.ProductColorModel", b =>
+            modelBuilder.Entity("HolaConsultores.TiendaOnline.Infraestructure.Entities.UserModel", b =>
                 {
-                    b.HasOne("HolaConsultores.TiendaOnline.Models.Negocio.ColorModel", "Color")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("HolaConsultores.TiendaOnline.Infraestructure.Entities.ProductColorModel", b =>
+                {
+                    b.HasOne("HolaConsultores.TiendaOnline.Infraestructure.Entities.ColorModel", "Color")
                         .WithMany("Products")
                         .HasForeignKey("ColorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("HolaConsultores.TiendaOnline.Models.Negocio.ProductModel", "Product")
+                    b.HasOne("HolaConsultores.TiendaOnline.Infraestructure.Entities.ProductModel", "Product")
                         .WithMany("Colors")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -137,15 +160,15 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("HolaConsultores.TiendaOnline.Models.Negocio.ProductSizeModel", b =>
+            modelBuilder.Entity("HolaConsultores.TiendaOnline.Infraestructure.Entities.ProductSizeModel", b =>
                 {
-                    b.HasOne("HolaConsultores.TiendaOnline.Models.Negocio.ProductModel", "Product")
+                    b.HasOne("HolaConsultores.TiendaOnline.Infraestructure.Entities.ProductModel", "Product")
                         .WithMany("Sizes")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("HolaConsultores.TiendaOnline.Models.Negocio.SizeModel", "Size")
+                    b.HasOne("HolaConsultores.TiendaOnline.Infraestructure.Entities.SizeModel", "Size")
                         .WithMany("Products")
                         .HasForeignKey("SizeId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -156,19 +179,19 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Migrations
                     b.Navigation("Size");
                 });
 
-            modelBuilder.Entity("HolaConsultores.TiendaOnline.Models.Negocio.ColorModel", b =>
+            modelBuilder.Entity("HolaConsultores.TiendaOnline.Infraestructure.Entities.ColorModel", b =>
                 {
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("HolaConsultores.TiendaOnline.Models.Negocio.ProductModel", b =>
+            modelBuilder.Entity("HolaConsultores.TiendaOnline.Infraestructure.Entities.ProductModel", b =>
                 {
                     b.Navigation("Colors");
 
                     b.Navigation("Sizes");
                 });
 
-            modelBuilder.Entity("HolaConsultores.TiendaOnline.Models.Negocio.SizeModel", b =>
+            modelBuilder.Entity("HolaConsultores.TiendaOnline.Infraestructure.Entities.SizeModel", b =>
                 {
                     b.Navigation("Products");
                 });

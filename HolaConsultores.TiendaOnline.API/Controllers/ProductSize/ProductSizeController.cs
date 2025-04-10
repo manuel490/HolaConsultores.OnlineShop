@@ -1,6 +1,7 @@
 ﻿using HolaConsultores.TiendaOnline.Domain.Interfaces.IControllers;
 using HolaConsultores.TiendaOnline.Domain.Interfaces.IServices;
 using HolaConsultores.TiendaOnline.Domain.Resources.ProductSize;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

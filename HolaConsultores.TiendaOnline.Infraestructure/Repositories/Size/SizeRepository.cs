@@ -48,9 +48,9 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Repositories.Size
         {
             try
             {
-                var size = await _context.Sizes.AddAsync(obj);
+                var result = await _context.Sizes.AddAsync(obj);
                 _context.SaveChanges();
-                return size.Entity;
+                return result.Entity;
             }
             catch (Exception ex)
             {
@@ -64,10 +64,10 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Repositories.Size
         {
             try
             {
-                var size = await GetByIdAsync(id);
-                _context.Sizes.Remove(size);
+                var result = await GetByIdAsync(id);
+                _context.Sizes.Remove(result);
                 await _context.SaveChangesAsync();
-                return size;
+                return result;
             }
             catch (Exception ex)
             {
@@ -81,10 +81,10 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Repositories.Size
         {
             try
             {
-                var size = await GetByIdAsync(obj.Id);
-                size.Name = obj.Name;
+                var result = await GetByIdAsync(obj.Id);
+                result.Name = obj.Name;
                 _context.SaveChanges();
-                return size;
+                return result;
             }
             catch (Exception ex)
             {

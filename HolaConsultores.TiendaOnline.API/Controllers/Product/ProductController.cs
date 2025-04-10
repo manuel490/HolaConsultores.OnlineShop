@@ -6,6 +6,7 @@ using HolaConsultores.TiendaOnline.Domain.Resources.Product;
 using HolaConsultores.TiendaOnline.Domain.Resources.Size;
 using HolaConsultores.TiendaOnline.Infraestructure.Context;
 using HolaConsultores.TiendaOnline.Infraestructure.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

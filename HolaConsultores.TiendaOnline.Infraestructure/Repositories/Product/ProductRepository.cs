@@ -54,9 +54,9 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Repositories.Product
         {
             try
             {
-                var product = await _context.Products.AddAsync(obj);
+                var result = await _context.Products.AddAsync(obj);
                 _context.SaveChanges();
-                return product.Entity;
+                return result.Entity;
             }
             catch (Exception ex)
             {
@@ -70,10 +70,10 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Repositories.Product
         {
             try
             {
-                var product = await GetByIdAsync(id);
-                _context.Products.Remove(product);
+                var result = await GetByIdAsync(id);
+                _context.Products.Remove(result);
                 await _context.SaveChangesAsync();
-                return product;
+                return result;
             }
             catch (Exception ex)
             {
@@ -87,11 +87,11 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Repositories.Product
         {
             try
             {
-                var product = await GetByIdAsync(obj.Id);
-                product.Price = obj.Price;
-                product.Description = obj.Description;
+                var result = await GetByIdAsync(obj.Id);
+                result.Price = obj.Price;
+                result.Description = obj.Description;
                 _context.SaveChanges();
-                return product;
+                return result;
             }
             catch (Exception ex)
             {

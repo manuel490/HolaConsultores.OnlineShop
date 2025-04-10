@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HolaConsultores.TiendaOnline.Domain.Interfaces.IServices
+{
+    public interface IUserService<R, I> : IService<R, I>
+    {
+        public Task<bool> UserExist(R obj);
+    }
+}

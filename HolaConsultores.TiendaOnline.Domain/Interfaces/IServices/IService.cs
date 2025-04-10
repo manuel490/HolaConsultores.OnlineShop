@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace HolaConsultores.TiendaOnline.Domain.Interfaces.IServices
 {
-    public interface IService<T, I>
+    public interface IService<R, I>
     {
-        public Task<T> AddAsync(I obj);
-        public Task<T> DeleteAsync(int id);
-        public Task<T> UpdateAsync(I obj);
-        public Task<T> GetByIdAsync(int id);
-        public Task<IEnumerable<T>> GetAllAsync();
-        public Task<IEnumerable<T>> GetAllAsync(int offset, int limit);
+        public Task<R> AddAsync(I obj);
+        public Task<R> DeleteAsync(int id);
+        public Task<R> UpdateAsync(I obj);
+        public Task<R> GetByIdAsync(int id);
+        public Task<IEnumerable<R>> GetAllAsync();
+        public Task<IEnumerable<R>> GetAllAsync(int offset, int limit);
     }
 }

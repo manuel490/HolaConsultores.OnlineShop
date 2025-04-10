@@ -4,6 +4,7 @@ using HolaConsultores.TiendaOnline.Domain.Resources.Color;
 using HolaConsultores.TiendaOnline.Domain.Resources.Product;
 using HolaConsultores.TiendaOnline.Domain.Resources.ProductColor;
 using HolaConsultores.TiendaOnline.Domain.Resources.Size;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

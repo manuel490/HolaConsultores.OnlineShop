@@ -1,0 +1,71 @@
+﻿using HolaConsultores.TiendaOnline.Domain.Interfaces.IControllers;
+using HolaConsultores.TiendaOnline.Domain.Interfaces.IServices;
+using HolaConsultores.TiendaOnline.Domain.Resources.Size;
+using HolaConsultores.TiendaOnline.Domain.Resources.User;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace HolaConsultores.TiendaOnline.API.Controllers.User
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UserController : Controller<IUserService<UserResource, UserResource>>, IController<UserResource, UserResource>
+    {
+        public UserController(IUserService<UserResource, UserResource> service) : base(service)
+        {
+        }
+
+        #region GET
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<UserResource>>> Get()
+        {
+            var result = await _service.GetAllAsync();
+
+            return Ok(result);
+        }
+        [HttpGet("{offset}/{limit}")]
+        public async Task<ActionResult<IEnumerable<UserResource>>> Get(int offset, int limit)
+        {
+            var result = await _service.GetAllAsync(offset, limit);
+            return Ok(result);
+        }
+        [HttpGet("{id}")]
+        public async Task<ActionResult<UserResource>> GetById(int id)
+        {
+            var result = await _service.GetByIdAsync(id);
+            return Ok(result);
+        }
+        #endregion
+
+        #region ADD
+        [HttpPost]
+        public async Task<ActionResult<UserResource>> Post(UserResource resource)
+        {
+            var result = await _service.AddAsync(resource);
+            return Ok(result);
+        }
+        #endregion
+
+        #region DELETE
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<UserResource>> Delete(int id)
+        {
+            var result = await _service.DeleteAsync(id);
+            return Ok(result);
+        }
+        #endregion
+
+        #region UPDATE
+        [HttpPut]
+        public async Task<ActionResult<UserResource>> Put(UserResource resource)
+        {
+
+
+            var result = await _service.UpdateAsync(resource);
+            return Ok(result);
+        }
+        #endregion
+
+    }
+}

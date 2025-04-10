@@ -6,6 +6,7 @@ using HolaConsultores.TiendaOnline.Domain.Resources.Product;
 using HolaConsultores.TiendaOnline.Infraestructure.Context;
 using HolaConsultores.TiendaOnline.Infraestructure.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -14,6 +15,7 @@ namespace HolaConsultores.TiendaOnline.API.Controllers.Color
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class ColorController : Controller<IService<ColorResource, ColorInputResource>>, IController<ColorResource, ColorInputResource>
     {
         public ColorController(IService<ColorResource, ColorInputResource> service) : base(service)

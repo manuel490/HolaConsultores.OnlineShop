@@ -48,10 +48,10 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Repositories.Color
         {
             try
             {
-                var color = await _context.Colors.AddAsync(obj);
+                var result = await _context.Colors.AddAsync(obj);
                 _context.SaveChanges();
 
-                return color.Entity;
+                return result.Entity;
             }
             catch (Exception ex)
             {
@@ -65,10 +65,10 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Repositories.Color
         {
             try
             {
-                var color = await GetByIdAsync(id);
-                _context.Colors.Remove(color);
+                var result = await GetByIdAsync(id);
+                _context.Colors.Remove(result);
                 await _context.SaveChangesAsync();
-                return color;
+                return result;
             }
             catch (Exception ex)
             {
@@ -82,10 +82,10 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Repositories.Color
         {
             try
             {
-                var color = await GetByIdAsync(obj.Id);                
-                color.Name = obj.Name;
+                var result = await GetByIdAsync(obj.Id);                
+                result.Name = obj.Name;
                 _context.SaveChanges();
-                return color;
+                return result;
             }
             catch (Exception ex)
             {

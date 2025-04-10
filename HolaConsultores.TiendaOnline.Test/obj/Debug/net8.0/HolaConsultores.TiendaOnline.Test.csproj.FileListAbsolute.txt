@@ -97,3 +97,4 @@ C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Test\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Test.pdb
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Test\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Test.genruntimeconfig.cache
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Test\obj\Debug\net8.0\ref\HolaConsultores.TiendaOnline.Test.dll
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.Test\obj\Debug\net8.0\HolaConsultores.TiendaOnline.Test.sourcelink.json

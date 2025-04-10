@@ -19,6 +19,7 @@ namespace HolaConsultores.TiendaOnline.Infraestructure.Context
         public DbSet<SizeModel> Sizes { get; set; }
         public DbSet<ProductColorModel> ProductColors { get; set; }
         public DbSet<ProductSizeModel> ProductSizes { get; set; }
+        public DbSet<UserModel> Users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
