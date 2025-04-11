@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaConsultores.OnlineShop.API", "HolaConsultores.OnlineShop.API\HolaConsultores.OnlineShop.API.csproj", "{B6851F2E-0D4D-4939-B366-67CAD80B314A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaConsultores.OnlineShop.Infraestructure", "HolaConsultores.OnlineShop.Infraestructure\HolaConsultores.OnlineShop.Infraestructure.csproj", "{1ABFD34A-EB7A-4B41-AE75-54E08565D72F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaConsultores.OnlineShop.Services", "HolaConsultores.OnlineShop.Services\HolaConsultores.OnlineShop.Services.csproj", "{89218634-1650-4A89-B9D4-4556F09FF950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaConsultores.OnlineShop.Domain", "HolaConsultores.OnlineShop.Domain\HolaConsultores.OnlineShop.Domain.csproj", "{627B51B2-C5DA-4630-8E9F-7AC022B87D89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaConsultores.OnlineShop.Mappers", "HolaConsultores.OnlineShop.Mappers\HolaConsultores.OnlineShop.Mappers.csproj", "{AE72B998-115F-44CE-9DE3-690B2C8210AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaConsultores.OnlineShop.Test", "HolaConsultores.OnlineShop.Test\HolaConsultores.OnlineShop.Test.csproj", "{71AA4E9E-D58D-44B4-9006-39549CC9A78C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6851F2E-0D4D-4939-B366-67CAD80B314A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6851F2E-0D4D-4939-B366-67CAD80B314A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6851F2E-0D4D-4939-B366-67CAD80B314A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6851F2E-0D4D-4939-B366-67CAD80B314A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ABFD34A-EB7A-4B41-AE75-54E08565D72F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ABFD34A-EB7A-4B41-AE75-54E08565D72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ABFD34A-EB7A-4B41-AE75-54E08565D72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ABFD34A-EB7A-4B41-AE75-54E08565D72F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89218634-1650-4A89-B9D4-4556F09FF950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89218634-1650-4A89-B9D4-4556F09FF950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89218634-1650-4A89-B9D4-4556F09FF950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89218634-1650-4A89-B9D4-4556F09FF950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{627B51B2-C5DA-4630-8E9F-7AC022B87D89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627B51B2-C5DA-4630-8E9F-7AC022B87D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627B51B2-C5DA-4630-8E9F-7AC022B87D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627B51B2-C5DA-4630-8E9F-7AC022B87D89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE72B998-115F-44CE-9DE3-690B2C8210AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE72B998-115F-44CE-9DE3-690B2C8210AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE72B998-115F-44CE-9DE3-690B2C8210AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE72B998-115F-44CE-9DE3-690B2C8210AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71AA4E9E-D58D-44B4-9006-39549CC9A78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71AA4E9E-D58D-44B4-9006-39549CC9A78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71AA4E9E-D58D-44B4-9006-39549CC9A78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71AA4E9E-D58D-44B4-9006-39549CC9A78C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4BC0C09-31CB-442F-8E3C-D21C5C040B35}
+	EndGlobalSection
+EndGlobal
