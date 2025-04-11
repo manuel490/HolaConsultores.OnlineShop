@@ -4,14 +4,121 @@
     "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Test\\HolaConsultores.TiendaOnline.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Test\\HolaConsultores.TiendaOnline.Test.csproj": {
+    "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.API\\HolaConsultores.TiendaOnline.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Test\\HolaConsultores.TiendaOnline.Test.csproj",
-        "projectName": "HolaConsultores.TiendaOnline.Test",
-        "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Test\\HolaConsultores.TiendaOnline.Test.csproj",
+        "projectUniqueName": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.API\\HolaConsultores.TiendaOnline.API.csproj",
+        "projectName": "HolaConsultores.TiendaOnline.API",
+        "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.API\\HolaConsultores.TiendaOnline.API.csproj",
         "packagesPath": "C:\\Users\\Manuel Silva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Test\\obj\\",
+        "outputPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Manuel Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj": {
+                "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj"
+              },
+              "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Infraestructure\\HolaConsultores.TiendaOnline.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Infraestructure\\HolaConsultores.TiendaOnline.Infraestructure.csproj"
+              },
+              "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Services\\HolaConsultores.TiendaOnline.Services.csproj": {
+                "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Services\\HolaConsultores.TiendaOnline.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.9.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj",
+        "projectName": "HolaConsultores.TiendaOnline.Domain",
+        "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj",
+        "packagesPath": "C:\\Users\\Manuel Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,9 +158,337 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Infraestructure\\HolaConsultores.TiendaOnline.Infraestructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Infraestructure\\HolaConsultores.TiendaOnline.Infraestructure.csproj",
+        "projectName": "HolaConsultores.TiendaOnline.Infraestructure",
+        "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Infraestructure\\HolaConsultores.TiendaOnline.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\Manuel Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Infraestructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Manuel Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj": {
+                "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Mappers\\HolaConsultores.TiendaOnline.Mappers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Mappers\\HolaConsultores.TiendaOnline.Mappers.csproj",
+        "projectName": "HolaConsultores.TiendaOnline.Mappers",
+        "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Mappers\\HolaConsultores.TiendaOnline.Mappers.csproj",
+        "packagesPath": "C:\\Users\\Manuel Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Mappers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Manuel Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj": {
+                "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj"
+              },
+              "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Infraestructure\\HolaConsultores.TiendaOnline.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Infraestructure\\HolaConsultores.TiendaOnline.Infraestructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Services\\HolaConsultores.TiendaOnline.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Services\\HolaConsultores.TiendaOnline.Services.csproj",
+        "projectName": "HolaConsultores.TiendaOnline.Services",
+        "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Services\\HolaConsultores.TiendaOnline.Services.csproj",
+        "packagesPath": "C:\\Users\\Manuel Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Manuel Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj": {
+                "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj"
+              },
+              "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Infraestructure\\HolaConsultores.TiendaOnline.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Infraestructure\\HolaConsultores.TiendaOnline.Infraestructure.csproj"
+              },
+              "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Mappers\\HolaConsultores.TiendaOnline.Mappers.csproj": {
+                "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Mappers\\HolaConsultores.TiendaOnline.Mappers.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Test\\HolaConsultores.TiendaOnline.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Test\\HolaConsultores.TiendaOnline.Test.csproj",
+        "projectName": "HolaConsultores.TiendaOnline.Test",
+        "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Test\\HolaConsultores.TiendaOnline.Test.csproj",
+        "packagesPath": "C:\\Users\\Manuel Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Manuel Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.API\\HolaConsultores.TiendaOnline.API.csproj": {
+                "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.API\\HolaConsultores.TiendaOnline.API.csproj"
+              },
+              "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj": {
+                "projectPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.TiendaOnline\\HolaConsultores.TiendaOnline.Domain\\HolaConsultores.TiendaOnline.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             },
             "coverlet.collector": {
               "target": "Package",

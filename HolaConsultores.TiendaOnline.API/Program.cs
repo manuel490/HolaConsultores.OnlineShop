@@ -53,7 +53,7 @@ builder.Services.AddScoped<IRepository<UserModel>, UserRepository>();
 
 builder.Configuration.AddJsonFile("appsettings.json");
 
-var secretKey = builder.Configuration.GetSection("settings").GetSection("secretKey").ToString();
+var secretKey = builder.Configuration.GetSection("settings")["secretKey"].ToString();
 var secretKeyBytes = Encoding.UTF8.GetBytes(secretKey);
 
 builder.Services.AddAuthentication(config =>

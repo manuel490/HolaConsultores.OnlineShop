@@ -22,19 +22,19 @@ namespace HolaConsultores.TiendaOnline.API.Controllers.User
         {
             var result = await _service.GetAllAsync();
 
-            return Ok(result);
+            return result != null ? Ok(result) : NotFound();
         }
         [HttpGet("{offset}/{limit}")]
         public async Task<ActionResult<IEnumerable<UserResource>>> Get(int offset, int limit)
         {
             var result = await _service.GetAllAsync(offset, limit);
-            return Ok(result);
+            return result != null ? Ok(result) : NotFound();
         }
         [HttpGet("{id}")]
         public async Task<ActionResult<UserResource>> GetById(int id)
         {
             var result = await _service.GetByIdAsync(id);
-            return Ok(result);
+            return result != null ? Ok(result) : NotFound();
         }
         #endregion
 
@@ -52,7 +52,7 @@ namespace HolaConsultores.TiendaOnline.API.Controllers.User
         public async Task<ActionResult<UserResource>> Delete(int id)
         {
             var result = await _service.DeleteAsync(id);
-            return Ok(result);
+            return result != null ? Ok(result) : NotFound();
         }
         #endregion
 
@@ -60,10 +60,8 @@ namespace HolaConsultores.TiendaOnline.API.Controllers.User
         [HttpPut]
         public async Task<ActionResult<UserResource>> Put(UserResource resource)
         {
-
-
             var result = await _service.UpdateAsync(resource);
-            return Ok(result);
+            return result != null ? Ok(result) : NotFound();
         }
         #endregion
 

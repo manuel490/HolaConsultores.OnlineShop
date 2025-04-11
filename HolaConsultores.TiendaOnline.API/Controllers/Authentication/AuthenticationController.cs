@@ -23,9 +23,10 @@ namespace HolaConsultores.TiendaOnline.API.Controllers.Authentication
         public AuthenticationController(IConfiguration config,
                                         IUserService<UserResource, UserResource> service)
         {
-            secretKey = config?.GetSection("settings")?.GetSection("secretKey")?.ToString();
-            adminEmail = config.GetSection("settings").GetValue<string>("adminEmail");
-            adminPassword = config.GetSection("settings").GetValue<string>("adminPassword");
+            secretKey = config?.GetSection("settings")["secretKey"].ToString();
+            adminEmail = config?.GetSection("settings")["adminEmail"];
+            adminPassword = config?.GetSection("settings")["adminPassword"];
+            
             _service = service;
         }
 

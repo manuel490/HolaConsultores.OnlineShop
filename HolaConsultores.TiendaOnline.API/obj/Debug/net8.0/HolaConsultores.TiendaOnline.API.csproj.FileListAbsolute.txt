@@ -299,7 +299,6 @@ C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.HolaConsultores.TiendaOnline.API.props
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.HolaConsultores.TiendaOnline.API.props
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.API\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.API\obj\Debug\net8.0\HolaCons.0D1229B2.Up2Date
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.API\obj\Debug\net8.0\HolaConsultores.TiendaOnline.API.dll
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.API\obj\Debug\net8.0\refint\HolaConsultores.TiendaOnline.API.dll
@@ -320,3 +319,4 @@ C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.API\obj\Debug\net8.0\HolaConsultores.TiendaOnline.API.sourcelink.json
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.API\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\Manuel Silva\source\repos\HolaConsultores.TiendaOnline\HolaConsultores.TiendaOnline.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
