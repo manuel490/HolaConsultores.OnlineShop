@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HolaConsultores.OnlineShop.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f6d712e107f10bcbbecfcd8f9abac8bea0d5428")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e541b36db0b0b034731ab06eb283f6e182c305d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("HolaConsultores.OnlineShop.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HolaConsultores.OnlineShop.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
