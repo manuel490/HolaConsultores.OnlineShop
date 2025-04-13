@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HolaConsultores.OnlineShop.Domain.Interfaces.IRepositories;
 using HolaConsultores.OnlineShop.Infraestructure.Context;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.User;
 using Microsoft.EntityFrameworkCore;
 
 namespace HolaConsultores.OnlineShop.Infraestructure.Repositories.User

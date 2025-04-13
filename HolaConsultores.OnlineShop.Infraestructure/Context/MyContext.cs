@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.Color;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.Product;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.ProductColor;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.ProductSize;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.Size;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.User;
 using Microsoft.EntityFrameworkCore;
 
 namespace HolaConsultores.OnlineShop.Infraestructure.Context

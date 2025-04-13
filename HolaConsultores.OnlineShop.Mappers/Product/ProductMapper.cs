@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HolaConsultores.OnlineShop.Domain.Resources.Product;
 using HolaConsultores.OnlineShop.Domain.Resources.Size;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.Product;
 using HolaConsultores.OnlineShop.Mappers.ProductColor;
 using HolaConsultores.OnlineShop.Mappers.ProductSize;
 using HolaConsultores.OnlineShop.Mappers.Size;

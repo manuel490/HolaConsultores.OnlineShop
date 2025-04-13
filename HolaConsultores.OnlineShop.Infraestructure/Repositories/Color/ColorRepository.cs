@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HolaConsultores.OnlineShop.Domain.Interfaces.IRepositories;
 using HolaConsultores.OnlineShop.Infraestructure.Context;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.Color;
 using Microsoft.EntityFrameworkCore;
 
 namespace HolaConsultores.OnlineShop.Infraestructure.Repositories.Color
@@ -38,7 +39,7 @@ namespace HolaConsultores.OnlineShop.Infraestructure.Repositories.Color
             return await _context.Colors.Include(c => c.Products)
                                         .ThenInclude(pC => pC.Product)                                        
                                         .Where(c => c.Id == id)
-                                        .FirstAsync();
+                                        .FirstOrDefaultAsync();
         }
 
         #endregion
@@ -48,10 +49,18 @@ namespace HolaConsultores.OnlineShop.Infraestructure.Repositories.Color
         {
             try
             {
-                var result = await _context.Colors.AddAsync(obj);
-                _context.SaveChanges();
+                var colors = await GetAllAsync();
 
-                return result.Entity;
+                if (!colors.Any(x => x.Name.Equals(obj.Name, StringComparison.OrdinalIgnoreCase)))
+                {
+                    var result = await _context.Colors.AddAsync(obj);
+                    _context.SaveChanges();
+
+                    return result.Entity;
+                }else
+                {
+                    throw new Exception("This color already exist.");
+                }
             }
             catch (Exception ex)
             {
@@ -66,9 +75,16 @@ namespace HolaConsultores.OnlineShop.Infraestructure.Repositories.Color
             try
             {
                 var result = await GetByIdAsync(id);
-                _context.Colors.Remove(result);
-                await _context.SaveChangesAsync();
-                return result;
+                if (result != null)
+                {
+                    _context.Colors.Remove(result);
+                    await _context.SaveChangesAsync();
+                    return result;
+                } else
+                {
+                    throw new Exception("There are not any color with the specified id");
+                }
+                
             }
             catch (Exception ex)
             {
@@ -82,10 +98,16 @@ namespace HolaConsultores.OnlineShop.Infraestructure.Repositories.Color
         {
             try
             {
-                var result = await GetByIdAsync(obj.Id);                
-                result.Name = obj.Name;
-                _context.SaveChanges();
-                return result;
+                var result = await GetByIdAsync(obj.Id);
+                if (result != null)
+                {
+                    result.Name = obj.Name;
+                    _context.SaveChanges();
+                    return result;
+                } else
+                {
+                    throw new Exception("There are not any color with the specified id");
+                }
             }
             catch (Exception ex)
             {

@@ -1,7 +1,6 @@
 ﻿using System.Drawing.Imaging;
 using System.Text.Json.Serialization;
 using HolaConsultores.OnlineShop.Infraestructure.Context;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
 using HolaConsultores.OnlineShop.Infraestructure.Repositories.Color;
 using HolaConsultores.OnlineShop.Infraestructure.Repositories.Product;
 using HolaConsultores.OnlineShop.Infraestructure.Repositories.ProductColor;
@@ -27,6 +26,12 @@ using HolaConsultores.OnlineShop.Domain.Resources.Size;
 using HolaConsultores.OnlineShop.Domain.Interfaces.IRepositories;
 using HolaConsultores.OnlineShop.Domain.Resources.ProductSize;
 using HolaConsultores.OnlineShop.Domain.Resources.User;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.Color;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.ProductColor;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.Product;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.ProductSize;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.Size;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.User;
 
 var builder = WebApplication.CreateBuilder(args);
 

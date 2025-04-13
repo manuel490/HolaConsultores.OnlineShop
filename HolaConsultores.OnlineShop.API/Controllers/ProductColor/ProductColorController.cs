@@ -19,22 +19,26 @@ namespace HolaConsultores.OnlineShop.API.Controllers.ProductColor
         }
 
         #region GET
-        [NonAction]
-        public Task<ActionResult<IEnumerable<ProductColorResource>>> Get()
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<ProductColorResource>>> Get()
         {
-            throw new NotImplementedException();
+            var result = await _service.GetAllAsync();
+
+            return result != null ? Ok(result) : NotFound();
         }
 
-        [NonAction]
-        public Task<ActionResult<IEnumerable<ProductColorResource>>> Get(int offset, int limit)
+        [HttpGet("{offset}/{limit}")]
+        public async Task<ActionResult<IEnumerable<ProductColorResource>>> Get(int offset, int limit)
         {
-            throw new NotImplementedException();
+            var result = await _service.GetAllAsync(offset, limit);
+            return result != null ? Ok(result) : NotFound();
         }
 
-        [NonAction]
-        public Task<ActionResult<ProductColorResource>> GetById(int id)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ProductColorResource>> GetById(int id)
         {
-            throw new NotImplementedException();
+            var result = await _service.GetByIdAsync(id);
+            return result != null ? Ok(result) : NotFound();
         }
         #endregion
 

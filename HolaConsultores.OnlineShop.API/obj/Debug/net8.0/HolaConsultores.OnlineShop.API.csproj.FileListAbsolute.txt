@@ -1,3 +1,11 @@
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.csproj.AssemblyReference.cache
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.AssemblyInfoInputs.cache
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.AssemblyInfo.cs
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.sourcelink.json
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\bin\Debug\net8.0\HolaConsultores.OnlineShop.Domain.deps.json
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\bin\Debug\net8.0\HolaConsultores.OnlineShop.Domain.runtimeconfig.json
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\bin\Debug\net8.0\HolaConsultores.OnlineShop.Domain.exe
@@ -295,14 +303,6 @@ C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.On
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\bin\Debug\net8.0\HolaConsultores.OnlineShop.Infraestructure.pdb
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\bin\Debug\net8.0\HolaConsultores.OnlineShop.Services.pdb
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\bin\Debug\net8.0\HolaConsultores.OnlineShop.Mappers.pdb
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.csproj.AssemblyReference.cache
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.AssemblyInfoInputs.cache
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.AssemblyInfo.cs
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.csproj.CoreCompileInputs.cache
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\HolaConsultores.OnlineShop.API.sourcelink.json
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\scopedcss\bundle\HolaConsultores.OnlineShop.API.styles.css
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.API\obj\Debug\net8.0\staticwebassets.development.json

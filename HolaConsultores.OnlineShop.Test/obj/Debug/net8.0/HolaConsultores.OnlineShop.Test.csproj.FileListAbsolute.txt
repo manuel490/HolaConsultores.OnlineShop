@@ -1,4 +1,10 @@
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\bin\Debug\net8.0\CoverletSourceRootsMapping_HolaConsultores.OnlineShop.Test
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.csproj.AssemblyReference.cache
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.AssemblyInfoInputs.cache
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.AssemblyInfo.cs
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.sourcelink.json
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\bin\Debug\net8.0\testhost.dll
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\bin\Debug\net8.0\HolaConsultores.OnlineShop.API.deps.json
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\bin\Debug\net8.0\HolaConsultores.OnlineShop.API.runtimeconfig.json
@@ -367,12 +373,6 @@ C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.On
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\bin\Debug\net8.0\HolaConsultores.OnlineShop.Infraestructure.pdb
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\bin\Debug\net8.0\HolaConsultores.OnlineShop.Mappers.pdb
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\bin\Debug\net8.0\HolaConsultores.OnlineShop.Services.pdb
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.csproj.AssemblyReference.cache
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.AssemblyInfoInputs.cache
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.AssemblyInfo.cs
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.csproj.CoreCompileInputs.cache
-C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.sourcelink.json
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaCons.B870DFC1.Up2Date
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\HolaConsultores.OnlineShop.Test.dll
 C:\Users\Manuel Silva\source\repos\HolaConsultores.OnlineShop\HolaConsultores.OnlineShop.Test\obj\Debug\net8.0\refint\HolaConsultores.OnlineShop.Test.dll

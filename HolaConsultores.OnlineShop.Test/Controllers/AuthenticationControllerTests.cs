@@ -37,6 +37,7 @@ namespace HolaConsultores.OnlineShop.Test.Controllers
             var resource = new UserResource
             {
                 Id = 1,
+                Name = "Manuel",
                 Email = email,
                 Password = password
             };
@@ -55,6 +56,7 @@ namespace HolaConsultores.OnlineShop.Test.Controllers
             var resource = new UserResource
             {
                 Id = 1,
+                Name = "Manuel",
                 Email = email,
                 Password = password
             };

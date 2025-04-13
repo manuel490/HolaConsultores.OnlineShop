@@ -16,20 +16,25 @@ namespace HolaConsultores.OnlineShop.API.Controllers.ProductSize
         }
 
         #region GET
-        [NonAction]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductSizeResource>>> Get()
         {
-            throw new NotImplementedException();
+            var result = await _service.GetAllAsync();
+
+            return result != null ? Ok(result) : NotFound();
         }
-        [NonAction]
+        [HttpGet("{offset}/{limit}")]
         public async Task<ActionResult<IEnumerable<ProductSizeResource>>> Get(int offset, int limit)
         {
-            throw new NotImplementedException();
+            var result = await _service.GetAllAsync(offset, limit);
+            return result != null ? Ok(result) : NotFound();
         }
-        [NonAction]
+        
+        [HttpGet("{id}")]
         public async Task<ActionResult<ProductSizeResource>> GetById(int id)
         {
-            throw new NotImplementedException();
+            var result = await _service.GetByIdAsync(id);
+            return result != null ? Ok(result) : NotFound();
         }
         #endregion
 

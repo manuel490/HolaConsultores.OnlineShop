@@ -8,9 +8,9 @@ using HolaConsultores.OnlineShop.Domain.Interfaces.IServices;
 using HolaConsultores.OnlineShop.Domain.Resources.User;
 using HolaConsultores.OnlineShop.Domain.Resources.Color;
 using HolaConsultores.OnlineShop.Domain.Resources.Size;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
 using HolaConsultores.OnlineShop.Mappers.Color;
 using HolaConsultores.OnlineShop.Mappers.User;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.User;
 
 namespace HolaConsultores.OnlineShop.Services.User
 {
@@ -21,6 +21,20 @@ namespace HolaConsultores.OnlineShop.Services.User
         }
 
         #region GET
+
+        public async Task<bool> UserExist(UserResource obj)
+        {
+            try
+            {
+                var result = await GetAllAsync();
+                return result.Any(u => u.Email == obj.Email && u.Password == obj.Password);
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
         public async Task<IEnumerable<UserResource>> GetAllAsync()
         {
             try
@@ -63,12 +77,7 @@ namespace HolaConsultores.OnlineShop.Services.User
         {
             try
             {
-                var resource = new UserResource()
-                {
-                    Email = obj.Email,
-                    Password = obj.Password
-                };
-                var result = await _repository.AddAsync(resource.ToModel());
+                var result = await _repository.AddAsync(obj.ToModel());
                 return result.ToResource();
             }
             catch (Exception ex)
@@ -107,18 +116,7 @@ namespace HolaConsultores.OnlineShop.Services.User
         }
         #endregion
 
-        public async Task<bool> UserExist(UserResource obj)
-        {
-            try
-            {
-                var result = await GetAllAsync();
-                return result.Any(u => u.Email == obj.Email && u.Password == obj.Password);
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
+        
 
     }
 }

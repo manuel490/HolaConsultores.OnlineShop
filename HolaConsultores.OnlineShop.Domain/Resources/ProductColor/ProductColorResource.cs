@@ -10,8 +10,9 @@ namespace HolaConsultores.OnlineShop.Domain.Resources.ProductColor
     {
         public ProductColorResource() { }
 
-        public ProductColorResource(int productId, int colorId)
+        public ProductColorResource(int id, int productId, int colorId)
         {
+            Id = id;
             ProductId = productId;
             ColorId = colorId;
         }

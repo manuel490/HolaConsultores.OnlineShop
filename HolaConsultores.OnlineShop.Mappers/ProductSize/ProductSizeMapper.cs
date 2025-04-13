@@ -7,10 +7,10 @@ using HolaConsultores.OnlineShop.Domain.Resources.Product;
 using HolaConsultores.OnlineShop.Domain.Resources.ProductSize;
 using HolaConsultores.OnlineShop.Domain.Resources.Size;
 using HolaConsultores.OnlineShop.Domain.Resources.Color;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
 using HolaConsultores.OnlineShop.Mappers.Color;
 using HolaConsultores.OnlineShop.Mappers.Product;
 using HolaConsultores.OnlineShop.Mappers.Size;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.ProductSize;
 
 namespace HolaConsultores.OnlineShop.Mappers.ProductSize
 {
@@ -18,7 +18,7 @@ namespace HolaConsultores.OnlineShop.Mappers.ProductSize
     {
         public static ProductSizeModel ToModel(this ProductSizeResource resource)
         {
-            return new ProductSizeModel(resource.ProductId, resource.SizeId);
+            return new ProductSizeModel(resource.Id, resource.ProductId, resource.SizeId);
         }
 
         public static IEnumerable<ProductSizeModel> ToModel(this IEnumerable<ProductSizeResource> resources)
@@ -34,7 +34,7 @@ namespace HolaConsultores.OnlineShop.Mappers.ProductSize
 
         public static ProductSizeResource ToResource(this ProductSizeModel model)
         {
-            return new ProductSizeResource(model.ProductId, model.SizeId);
+            return new ProductSizeResource(model.Id, model.ProductId, model.SizeId);
         }
 
         public static IEnumerable<ProductSizeResource> ToResource(this IEnumerable<ProductSizeModel> models)

@@ -7,8 +7,8 @@ using HolaConsultores.OnlineShop.Domain.Interfaces.IRepositories;
 using HolaConsultores.OnlineShop.Domain.Interfaces.IServices;
 using HolaConsultores.OnlineShop.Domain.Resources.ProductSize;
 using HolaConsultores.OnlineShop.Domain.Resources.ProductColor;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
 using HolaConsultores.OnlineShop.Mappers.ProductSize;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.ProductSize;
 
 namespace HolaConsultores.OnlineShop.Services.ProductSize
 {
@@ -18,20 +18,41 @@ namespace HolaConsultores.OnlineShop.Services.ProductSize
         {
         }
 
-        #region GET (Not implemented)
+        #region GET
         public async Task<IEnumerable<ProductSizeResource>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return (await _repository.GetAllAsync()).ToList().ToResource();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public async Task<IEnumerable<ProductSizeResource>> GetAllAsync(int offset, int limit)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return (await _repository.GetAllAsync(offset, limit)).ToList().ToResource();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public async Task<ProductSizeResource> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return (await _repository.GetByIdAsync(id)).ToResource();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
         #endregion
 

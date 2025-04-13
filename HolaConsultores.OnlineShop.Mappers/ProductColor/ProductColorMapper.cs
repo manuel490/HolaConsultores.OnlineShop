@@ -7,7 +7,7 @@ using HolaConsultores.OnlineShop.Domain.Resources.Color;
 using HolaConsultores.OnlineShop.Domain.Resources.Product;
 using HolaConsultores.OnlineShop.Domain.Resources.ProductColor;
 using HolaConsultores.OnlineShop.Domain.Resources.ProductSize;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.ProductColor;
 using HolaConsultores.OnlineShop.Mappers.Color;
 using HolaConsultores.OnlineShop.Mappers.Product;
 
@@ -17,7 +17,7 @@ namespace HolaConsultores.OnlineShop.Mappers.ProductColor
     {
         public static ProductColorModel ToModel(this ProductColorResource resource)
         {
-            return new ProductColorModel(resource.ProductId, resource.ColorId);
+            return new ProductColorModel(resource.Id, resource.ProductId, resource.ColorId);
         }
 
         public static IEnumerable<ProductColorModel> ToModel(this IEnumerable<ProductColorResource> resources)
@@ -33,7 +33,7 @@ namespace HolaConsultores.OnlineShop.Mappers.ProductColor
 
         public static ProductColorResource ToResource(this ProductColorModel model)
         {
-            return new ProductColorResource(model.ProductId, model.ColorId);
+            return new ProductColorResource(model.Id, model.ProductId, model.ColorId);
         }
 
         public static IEnumerable<ProductColorResource> ToResource(this IEnumerable<ProductColorModel> models)

@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.OnlineShop\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1ABFD34A-EB7A-4B41-AE75-54E08565D72F}|HolaConsultores.OnlineShop.Infraestructure\\HolaConsultores.OnlineShop.Infraestructure.csproj|c:\\users\\manuel silva\\source\\repos\\holaconsultores.onlineshop\\holaconsultores.onlineshop.infraestructure\\repositories\\size\\sizerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ABFD34A-EB7A-4B41-AE75-54E08565D72F}|HolaConsultores.OnlineShop.Infraestructure\\HolaConsultores.OnlineShop.Infraestructure.csproj|solutionrelative:holaconsultores.onlineshop.infraestructure\\repositories\\size\\sizerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6851F2E-0D4D-4939-B366-67CAD80B314A}|HolaConsultores.OnlineShop.API\\HolaConsultores.OnlineShop.API.csproj|c:\\users\\manuel silva\\source\\repos\\holaconsultores.onlineshop\\holaconsultores.onlineshop.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B6851F2E-0D4D-4939-B366-67CAD80B314A}|HolaConsultores.OnlineShop.API\\HolaConsultores.OnlineShop.API.csproj|solutionrelative:holaconsultores.onlineshop.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6851F2E-0D4D-4939-B366-67CAD80B314A}|HolaConsultores.OnlineShop.API\\HolaConsultores.OnlineShop.API.csproj|c:\\users\\manuel silva\\source\\repos\\holaconsultores.onlineshop\\holaconsultores.onlineshop.api\\controllers\\productsize\\productsizecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6851F2E-0D4D-4939-B366-67CAD80B314A}|HolaConsultores.OnlineShop.API\\HolaConsultores.OnlineShop.API.csproj|solutionrelative:holaconsultores.onlineshop.api\\controllers\\productsize\\productsizecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ABFD34A-EB7A-4B41-AE75-54E08565D72F}|HolaConsultores.OnlineShop.Infraestructure\\HolaConsultores.OnlineShop.Infraestructure.csproj|c:\\users\\manuel silva\\source\\repos\\holaconsultores.onlineshop\\holaconsultores.onlineshop.infraestructure\\repositories\\productcolor\\productcolorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ABFD34A-EB7A-4B41-AE75-54E08565D72F}|HolaConsultores.OnlineShop.Infraestructure\\HolaConsultores.OnlineShop.Infraestructure.csproj|solutionrelative:holaconsultores.onlineshop.infraestructure\\repositories\\productcolor\\productcolorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SizeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.OnlineShop\\HolaConsultores.OnlineShop.Infraestructure\\Repositories\\Size\\SizeRepository.cs",
+              "RelativeDocumentMoniker": "HolaConsultores.OnlineShop.Infraestructure\\Repositories\\Size\\SizeRepository.cs",
+              "ToolTip": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.OnlineShop\\HolaConsultores.OnlineShop.Infraestructure\\Repositories\\Size\\SizeRepository.cs",
+              "RelativeToolTip": "HolaConsultores.OnlineShop.Infraestructure\\Repositories\\Size\\SizeRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T10:49:26.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.OnlineShop\\HolaConsultores.OnlineShop.API\\appsettings.json",
+              "RelativeDocumentMoniker": "HolaConsultores.OnlineShop.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.OnlineShop\\HolaConsultores.OnlineShop.API\\appsettings.json",
+              "RelativeToolTip": "HolaConsultores.OnlineShop.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-12T10:47:21.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductSizeController.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.OnlineShop\\HolaConsultores.OnlineShop.API\\Controllers\\ProductSize\\ProductSizeController.cs",
+              "RelativeDocumentMoniker": "HolaConsultores.OnlineShop.API\\Controllers\\ProductSize\\ProductSizeController.cs",
+              "ToolTip": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.OnlineShop\\HolaConsultores.OnlineShop.API\\Controllers\\ProductSize\\ProductSizeController.cs",
+              "RelativeToolTip": "HolaConsultores.OnlineShop.API\\Controllers\\ProductSize\\ProductSizeController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAvwB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T10:46:57.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductColorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.OnlineShop\\HolaConsultores.OnlineShop.Infraestructure\\Repositories\\ProductColor\\ProductColorRepository.cs",
+              "RelativeDocumentMoniker": "HolaConsultores.OnlineShop.Infraestructure\\Repositories\\ProductColor\\ProductColorRepository.cs",
+              "ToolTip": "C:\\Users\\Manuel Silva\\source\\repos\\HolaConsultores.OnlineShop\\HolaConsultores.OnlineShop.Infraestructure\\Repositories\\ProductColor\\ProductColorRepository.cs",
+              "RelativeToolTip": "HolaConsultores.OnlineShop.Infraestructure\\Repositories\\ProductColor\\ProductColorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T10:42:14.411Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

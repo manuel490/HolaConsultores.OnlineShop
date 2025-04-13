@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HolaConsultores.OnlineShop.Domain.Resources.User;
 using HolaConsultores.OnlineShop.Domain.Resources.Size;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.User;
 
 namespace HolaConsultores.OnlineShop.Mappers.User
 {
@@ -16,6 +16,7 @@ namespace HolaConsultores.OnlineShop.Mappers.User
             return new UserModel()
             { 
                 Id = resource.Id,
+                Name = resource.Name,
                 Email = resource.Email,
                 Password = resource.Password
             };
@@ -37,6 +38,7 @@ namespace HolaConsultores.OnlineShop.Mappers.User
             return new UserResource() 
             {
                 Id = model.Id ,
+                Name = model.Name ,
                 Email = model.Email ,
                 Password = model.Password 
             };

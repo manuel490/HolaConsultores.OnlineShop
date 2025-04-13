@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using HolaConsultores.OnlineShop.Domain.Resources.Color;
 using HolaConsultores.OnlineShop.Domain.Resources.Size;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
 using HolaConsultores.OnlineShop.Mappers.Product;
 using HolaConsultores.OnlineShop.Mappers.Color;
 using HolaConsultores.OnlineShop.Mappers.Size;
 using HolaConsultores.OnlineShop.Domain.Resources.Product;
 using HolaConsultores.OnlineShop.Domain.Interfaces.IServices;
 using HolaConsultores.OnlineShop.Domain.Interfaces.IRepositories;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.Product;
 
 namespace HolaConsultores.OnlineShop.Services.Product
 {

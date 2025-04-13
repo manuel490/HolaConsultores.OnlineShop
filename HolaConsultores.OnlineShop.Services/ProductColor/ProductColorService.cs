@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
 using HolaConsultores.OnlineShop.Domain.Resources.Color;
 using HolaConsultores.OnlineShop.Mappers.ProductColor;
 using HolaConsultores.OnlineShop.Domain.Resources.ProductColor;
 using HolaConsultores.OnlineShop.Domain.Interfaces.IServices;
 using HolaConsultores.OnlineShop.Domain.Interfaces.IRepositories;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.ProductColor;
 
 namespace HolaConsultores.OnlineShop.Services.ProductColor
 {
@@ -18,20 +18,41 @@ namespace HolaConsultores.OnlineShop.Services.ProductColor
         {
         }
 
-        #region GET (Not implemented)
+        #region GET
         public async Task<IEnumerable<ProductColorResource>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return (await _repository.GetAllAsync()).ToList().ToResource();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public async Task<IEnumerable<ProductColorResource>> GetAllAsync(int offset, int limit)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return (await _repository.GetAllAsync(offset, limit)).ToList().ToResource();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public async Task<ProductColorResource> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return (await _repository.GetByIdAsync(id)).ToResource();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
         #endregion
 

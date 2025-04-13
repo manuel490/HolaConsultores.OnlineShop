@@ -11,8 +11,9 @@ namespace HolaConsultores.OnlineShop.Domain.Resources.ProductSize
     {
         public ProductSizeResource() { }
 
-        public ProductSizeResource(int productId, int colorId)
+        public ProductSizeResource(int id, int productId, int colorId)
         {
+            Id = id;
             ProductId = productId;
             SizeId = colorId;
         }

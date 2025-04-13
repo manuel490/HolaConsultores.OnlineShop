@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HolaConsultores.OnlineShop.Domain.Interfaces.IRepositories;
 using HolaConsultores.OnlineShop.Infraestructure.Context;
-using HolaConsultores.OnlineShop.Infraestructure.Entities;
+using HolaConsultores.OnlineShop.Infraestructure.Entities.Size;
 using Microsoft.EntityFrameworkCore;
 
 namespace HolaConsultores.OnlineShop.Infraestructure.Repositories.Size
@@ -38,7 +38,7 @@ namespace HolaConsultores.OnlineShop.Infraestructure.Repositories.Size
             return await _context.Sizes.Include(s => s.Products)
                                        .ThenInclude(pS => pS.Product)
                                        .Where(c => c.Id == id)
-                                       .FirstAsync();
+                                       .FirstOrDefaultAsync();
         }
 
         #endregion
@@ -48,9 +48,17 @@ namespace HolaConsultores.OnlineShop.Infraestructure.Repositories.Size
         {
             try
             {
-                var result = await _context.Sizes.AddAsync(obj);
-                _context.SaveChanges();
-                return result.Entity;
+                var products = await GetAllAsync();
+                if (!products.Any(x => x.Name.Equals(obj.Name, StringComparison.OrdinalIgnoreCase)))
+                {
+                    var result = await _context.Sizes.AddAsync(obj);
+                    _context.SaveChanges();
+                    return result.Entity;
+                } else
+                {
+                    throw new Exception("This size already exist.");
+                }
+                    
             }
             catch (Exception ex)
             {
@@ -65,9 +73,16 @@ namespace HolaConsultores.OnlineShop.Infraestructure.Repositories.Size
             try
             {
                 var result = await GetByIdAsync(id);
-                _context.Sizes.Remove(result);
-                await _context.SaveChangesAsync();
-                return result;
+                if (result != null)
+                {
+                    _context.Sizes.Remove(result);
+                    await _context.SaveChangesAsync();
+                    return result;
+                }
+                else
+                {
+                    throw new Exception("There are not any size with the specified id");
+                }
             }
             catch (Exception ex)
             {
@@ -82,9 +97,17 @@ namespace HolaConsultores.OnlineShop.Infraestructure.Repositories.Size
             try
             {
                 var result = await GetByIdAsync(obj.Id);
-                result.Name = obj.Name;
-                _context.SaveChanges();
-                return result;
+
+                if (result != null)
+                {
+                    result.Name = obj.Name;
+                    _context.SaveChanges();
+                    return result;
+                }
+                else
+                {
+                    throw new Exception("There are not any size with the specified id");
+                }
             }
             catch (Exception ex)
             {
